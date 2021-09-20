@@ -5,6 +5,7 @@ import liquibase.parser.ChangeLogParserFactory
 import liquibase.resource.FileSystemResourceAccessor
 import liquibase.resource.ResourceAccessor
 import liquibase.util.FileUtil
+import spock.lang.Ignore
 import spock.lang.Specification
 
 import java.nio.file.Paths
@@ -61,6 +62,7 @@ class ChangeLogRewriterTest extends Specification {
         "liquibase/test-changelog"  | ".yml"      | ".*- changeLogId: .*\$"
         "liquibase/test-changelog"  | ".sql"      | ".*liquibase formatted sql changeLogId:.*\$"
     }
+    @Ignore
     def "register changelog readonly"() {
         when:
         //

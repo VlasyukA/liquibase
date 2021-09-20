@@ -5,9 +5,9 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.liquibase</groupId>
+    <groupId>ru.leroymerlin.solution</groupId>
     <artifactId>liquibase-base</artifactId>
-    <version>${liquibase.version}</version>
+    <version>0.0.1</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
@@ -43,18 +43,10 @@
         <url>http://liquibase.jira.com/browse/CORE</url>
     </issueManagement>
 
-    <scm>
-        <connection>scm:git:git@github.com:liquibase/liquibase.git</connection>
-        <url>scm:git:git@github.com:liquibase/liquibase.git</url>
-        <developerConnection>scm:git:git@github.com:liquibase/liquibase.git</developerConnection>
-    </scm>
-
     <properties>
         <liquibase.base.version>4.5.0</liquibase.base.version>
         <liquibase.version.qualifier>-local</liquibase.version.qualifier>
         <liquibase.version.snapshot>-SNAPSHOT</liquibase.version.snapshot>
-        <liquibase.version>${liquibase.base.version}${liquibase.version.qualifier}${liquibase.version.snapshot}
-        </liquibase.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.enforcer.requireMavenVersion>3.6</maven.enforcer.requireMavenVersion>
@@ -444,4 +436,14 @@
             </build>
         </profile>
     </profiles>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>https://art.lmru.tech/mvn-local-snapshots-solution</url>
+        </snapshotRepository>
+        <repository>
+            <id>releases</id>
+            <url>https://art.lmru.tech/mvn-local-release-solution</url>
+        </repository>
+    </distributionManagement>
 </project>

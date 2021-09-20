@@ -4,14 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.liquibase</groupId>
+        <groupId>ru.leroymerlin.solution</groupId>
         <artifactId>liquibase-base</artifactId>
-        <version>${liquibase.version}</version>
+        <version>0.0.1</version>
         <relativePath>base.pom.xml</relativePath>
     </parent>
 
     <artifactId>liquibase-root</artifactId>
-    <version>${liquibase.version}</version>
+    <version>0.0.1</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -46,7 +46,7 @@
                 </executions>
                 <configuration>
                     <outputDirectory>${project.build.directory}</outputDirectory>
-                    <finalName>liquibase-${liquibase.version}</finalName>
+                    <finalName>liquibase-0.0.1</finalName>
                     <attach>true</attach>
                     <excludes>
                         <exclude>com/datical/**</exclude>

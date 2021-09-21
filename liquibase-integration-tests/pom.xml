@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.liquibase</groupId>
+        <groupId>ru.leroymerlin.solution</groupId>
         <artifactId>liquibase-base-module</artifactId>
-        <version>${liquibase.version}</version>
+        <version>0.0.1</version>
         <relativePath>../base-module.pom.xml</relativePath>
     </parent>
 
@@ -14,9 +14,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.liquibase</groupId>
+            <groupId>ru.leroymerlin.solution</groupId>
             <artifactId>liquibase-extension-testing</artifactId>
-            <version>${liquibase.version}</version>
+            <version>0.0.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
